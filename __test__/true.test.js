@@ -1,16 +1,16 @@
-import {isTrue, isNull, isFalse, isUndefined } from '../true';
+const { isTrue, isNull, isFalse, isUndefined } = require('../true')
 
 describe('Testing for results null', () => {
   test('null', () => {
-    expect(isNull()).toBeNull();
-  });
-});
+    expect(isNull()).toBeNull()
+  })
+})
 
 describe('Testing for result true', () => {
   test('null', () => {
-    expect(isTrue()).toBeTruthy();
-  });
-});
+    expect(isTrue()).toBeTruthy()
+  })
+})
 
 describe("Testing for result False", () => {
   test('false', () => {
@@ -18,14 +18,14 @@ describe("Testing for result False", () => {
   });
 });
 
-describe("Testing for result undefined", () => {
+describe('Testing for result undefined', () => {
   test('undefined', () => {
-    expect(isUndefined()).toBeUndefined();
-  });
-});
+    expect(isUndefined()).toBeUndefined()
+  })
+})
 
-describe("Testing for Truthy or Falsy", () => {
+describe('Testing for Truthy or Falsy', () => {
   test('False or true', () => {
-    expect(isFalse()).not.toBeTruthy();
+    expect(isFalse()).not.toBeTruthy()
   })
 })
