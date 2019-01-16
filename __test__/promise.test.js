@@ -9,4 +9,12 @@ describe('Testing Promise ', () => {
       done()
     })
   })
+
+  test('Resolve the Hello!', () => {
+    return expect(Promise.resolve('Hola!')).resolves.toBe('Hola!')
+  })
+
+  test('Reject with error', () => {
+    return expect(Promise.reject('Error')).rejects.toBe('Error')
+  })
 })
