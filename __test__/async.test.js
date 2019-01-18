@@ -22,4 +22,5 @@ describe('Testing async/await ', () => {
     const dataRick = await getDataFromApi(apiRick) 
     expect(dataRick.name).toEqual('Rick Sanchez')
   })
+  
 })
